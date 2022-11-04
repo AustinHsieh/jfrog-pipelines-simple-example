@@ -41,7 +41,7 @@ pipelines:
             # Pipeline state documentation: https://www.jfrog.com/confluence/display/JFROG/Creating+Stateful+Pipelines#CreatingStatefulPipelines-PipelineState
             - echo "Previous run ID is $prev_runid"
 
-      - name: p1_s2
+      - name: p1_s21
         type: Bash
         configuration:
           inputSteps:
@@ -55,7 +55,7 @@ pipelines:
         type: Bash
         configuration:
           inputSteps:
-            - name: p1_s2
+            - name: p1_s21
           outputResources:
             - name: myPropertyBag
         execution:
